@@ -6,10 +6,12 @@ https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
     --branco-principal: #E0C097;
     --cinza-secundario: #C0C0C0;
     --fundo-secundario: #5C3D2E;
-    --fundo-caixa:rgb(45, 36, 36, 0.7) ;
+    --fundo-caixa:rgb(45, 36, 36, 0.9) ;
     /* #222107 */
    
     --cor-de-fundo:  #2D2424;
+
+    --fonte-principal: 'Inter';
 
 }
 * {
@@ -20,6 +22,9 @@ https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
 body{
     margin: 2% 0;
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
    
 }
 .principal{
@@ -32,10 +37,51 @@ body{
     color: var(--branco-principal);
     text-align: center;
 }
+.principal__title{
+    font-size: 40px;
+    width: 700;
+}
+.principal__subtitle{
+    font-size: 28px;
+    width: 400;
+}
+
+/* ocultando texto */
+/* Estilo para o link "Leia mais" */
+.expandir-link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Estilo para o texto oculto (invisível por padrão) */
+.texto-oculto {
+    display: none;
+}
+
+/* Estilo opcional para os parágrafos truncados */
+.paragrafo-curtido {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 3em; /* Ajuste a altura máxima desejada para o texto truncado */
+}
+
+/* Estilo para o link "Leia mais" quando o mouse passa por cima (opcional) */
+.expandir-link:hover {
+    color: red; /* Você pode personalizar a cor ao passar o mouse */
+    /* Outros estilos ao passar o mouse, se desejado */
+}
+
+/* acabou oocultar */
+
+
 .container{
     width: 100%;
     display: flex;
     flex-direction: column;
+   
+  
     
 }
 

@@ -6,46 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+    <header></header>
     <main>
         
     <section class="container principal">
-        <h1>Bem-vindo à Oficina de Ideias</h1>
-<p>O lugar onde, as ideias ganham vida e as dúvidas se renovam!</p>
+        <h1 class="principal__title">Bem-vindo à Oficina de Ideias</h1>
+<p class="principal__subtitle">O lugar onde, as ideias ganham vida e as dúvidas se renovam!</p>
 
         <div class="caixa__trabalho">
 
         
 
-
+           
             <ul class="lista caixa__trabalho__lista">
                 <li class="lista__item">
-                    <p >descriçao alura plus</p>
+                    <div class="hum">
+                        <p class="paragrafo-curtido">
+                            Este projeto foi criado durante o curso de <br> HTML e CSS: praticando HTML/CSS da alura.
+                            <a href="#" class="expandir-link">Leia mais</a>
+                        </p>
+                        <div class="texto-oculto">
+                            <p>
+                                Recebemos um modelo fornecido pelo FGMA e tivemos o desafio de transformar as informações fornecidas em nosso próprio site.
+                                Foi um trabalho mais complexo em comparação com os projetos anteriores, permitindo-nos praticar ainda mais técnicas avançadas, como o posicionamento flexível (Flexbox) e o sistema de grid, além de explorar novas maneiras de criar botões e posicionar elementos com CSS.
+                            </p>
+                            <!-- <a href="#" class="ocultar-link">Ocultar</a> -->
+                        </div>
+                    </div>
                     <img src="img/projetos/pj-alura-plus.png" alt="" class="lista__image">
                 </li>
-                <a href="https://gustavo91010.github.io/alura-plus/" class="lista__botao">Acesse clicando aqui</a>
-
+                <a href="" class="lista__botao">acesse clicando aqui</a>
+               
                 <li class="lista__item">
-                    <p>descriçao Portfolio</p>
+
+                    <div class="hum">
+                        <p class="paragrafo-curtido">
+                            Foi o meu primeiro projeto no mundo do desenvolvimento frontend, 
+                             <br> o meu primeiro contato com HTML e CSS.
+                            <a href="#" class="expandir-link">Leia mais</a>
+                        </p>
+                        <p class="texto-oculto" >Fiquei muito empolgado com essa experiência, e uma das grandes diferenças em relação ao backend é que agora posso mostrar diretamente o que estou criando, em vez de apenas explicar teoricamente. Não preciso mais dizer 'imagine...' - posso simplesmente demonstrar na prática. Foi uma jornada empolgante e estou ansioso para continuar aprendendo e criando no mundo do frontend.</p>
+                        <!-- <div class="texto-oculto">
+                           
+                        </div> -->
+                    </div>
                     <img src="img/projetos/pj-portifolio.png" alt="" class="lista__image">
                 </li>
                 <a href="" class="lista__botao">acesse clicando aqui</a>
+
+                
                 <li class="lista__item">
-                    <p>descriçao Portfolio</p>
+                    <div class="hum">
+                        <p class="paragrafo-curtido">
+                            O frontend da minha api Bill Manager.
+                            <a href="#" class="expandir-link">Leia mais</a>
+                        </p>
+                        <!-- <div class="texto-oculto">
+                            
+                        </div> -->
+                        <p class="texto-oculto">ainda estou implementando as funcções, ate o momento, só fiz a tela de login</p>
+                    </div>
                     <img src="img/projetos/pj-bill-manager.png" alt="" class="lista__image">
                 </li>
-                <a href="" class="lista__botao">acesse clicando aqui</a>
+                <a href="" class="lista__botao">acesse clicando aqui</a> 
 
             </ul>
 
         </div>
-
+       
     </section>
 
 </main>
 
+<footer></footer>
+<script>
+   const expandirLinks = document.querySelectorAll('.expandir-link');
+const ocultarLinks = document.querySelectorAll('.ocultar-link');
+
+expandirLinks.forEach(function(link, index) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const textoOculto = this.parentElement.nextElementSibling;
+
+        if (textoOculto.style.display === 'block') {
+            textoOculto.style.display = 'none';
+            ocultarLinks[index].style.display = 'none'; // Oculta o link "Ocultar"
+            expandirLinks[index].textContent = 'Leia mais'; // Altera o texto do link "Leia mais"
+        } else {
+            textoOculto.style.display = 'block';
+            ocultarLinks[index].style.display = 'inline'; // Exibe o link "Ocultar"
+            expandirLinks[index].textContent = 'Ocultar'; // Altera o texto do link "Leia mais"
+        }
+    });
+});
+
+</script>
 </body>
 
 </html>
