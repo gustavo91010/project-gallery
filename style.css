@@ -31,11 +31,26 @@ body{
 }
 
 .lista__image{
-    width: 70%;
+    width: 50%;
+}
+
+.imagem__responsiva{
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Largura desejada */
+    height: 200px; 
 }
 .caixa__trabalho{
     
     background-color: #222107;
     display: flex;
+
     width: 50%;
+}
+
+.lista__item{
+    margin: 5% 5% 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
