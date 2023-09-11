@@ -1,8 +1,15 @@
+
+/*
+https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
+
 :root{
-    --branco-principal: #FFFFFF;
+    --branco-principal: #E0C097;
     --cinza-secundario: #C0C0C0;
+    --fundo-secundario: #5C3D2E;
+    --fundo-caixa:rgb(45, 36, 36, 0.7) ;
+    /* #222107 */
    
-    --cor-de-fundo: : #000000;
+    --cor-de-fundo:  #2D2424;
 
 }
 * {
@@ -11,12 +18,14 @@
 }
 
 body{
+    margin: 2% 0;
     background-color: var(--cor-de-fundo);
-    color: var(--branco-principal);
+   
 }
 .principal{
 
     background-image: url("img/lucio-patone-ssJoxTDiUPg-unsplash.jpg");
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
@@ -35,14 +44,16 @@ body{
 }
 
 .imagem__responsiva{
+    /* parece que isso nao rolou nao... */
     max-width: 100%;
     height: auto;
-    width: 300px; /* Largura desejada */
+    width: 300px; 
     height: 200px; 
 }
+
 .caixa__trabalho{
     
-    background-color: #222107;
+    background-color: var(--fundo-caixa);
     display: flex;
 
     width: 50%;
@@ -53,4 +64,19 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.lista__botao{
+  color: var(--branco-principal);
+  /* background-color: var(--fundo-secundario); */
+  
+ border: 2px solid;
+ border-radius: 8px;
+ padding: 5px 0;
+ margin: 0% 20%;
+ display: block;
+ text-decoration: none;
+ 
+}
+.lista__botao:hover{
+    background-color: var(--fundo-secundario);
 }
