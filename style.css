@@ -1,24 +1,143 @@
-
 /*
 https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
 
-:root{
+:root {
     --branco-principal: #E0C097;
     --cinza-secundario: #C0C0C0;
     --fundo-secundario: #5C3D2E;
-    --fundo-caixa:rgb(45, 36, 36, 0.9) ;
+    --fundo-caixa: rgb(45, 36, 36, 0.9);
     /* #222107 */
-   
-    --cor-de-fundo:  #2D2424;
+
+    --cor-de-fundo: #2D2424;
 
     --fonte-principal: 'Inter';
 
 }
+
 * {
     margin: 0;
     padding: 0;
 }
 
+.principal {
+    display: block;
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    */
+
+
+    background-color: #5C3D2E;
+    width: 70%;
+    height: 100vw;
+    margin: auto;
+}
+
+.lista__item {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.principal__title,
+.principal__subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.lista__item__texto {
+    /*
+    color: red;
+   */
+    width: 50%;
+
+
+}
+
+.lista__item__introducao {
+    margin-right: 5em;
+    width: auto;
+    margin-bottom: 2em;
+
+
+}
+
+.lista__item__expansão {
+    display: none;
+    margin-bottom: 2em;
+}
+
+.lista__item__checkbox {
+
+    display: none;
+}
+
+.lista__item__checkbox:checked~.lista__item__expansão {
+    display: block;
+
+}
+
+.lista__item__imagem {
+    cursor: pointer;
+    /* Altera o cursor para parecer um link clicável 
+    position: absolute;
+    */
+
+}
+
+.lista__item__image_expandir {
+
+    width: 15px;
+}
+
+.sgv__icone__expandir {
+    fill: red;
+    /* Altere a cor preenchimento (fill) para a cor desejada */
+}
+
+.lista__image {
+    width: 40%;
+}
+
+
+.lista__item__link {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    background: #C0C0C0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 body{
     margin: 2% 0;
     background-color: var(--cor-de-fundo);
@@ -45,35 +164,37 @@ body{
     font-size: 28px;
     width: 400;
 }
+*/
 
 /* ocultando texto */
-/* Estilo para o link "Leia mais" */
+/* Estilo para o link "Leia mais" 
 .expandir-link {
     cursor: pointer;
     color: blue;
     text-decoration: underline;
 }
 
-/* Estilo para o texto oculto (invisível por padrão) */
+/* Estilo para o texto oculto (invisível por padrão) 
 .texto-oculto {
     display: none;
 }
 
-/* Estilo opcional para os parágrafos truncados */
+/* Estilo opcional para os parágrafos truncados 
 .paragrafo-curtido {
+    
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-height: 3em; /* Ajuste a altura máxima desejada para o texto truncado */
+    max-height: 3em; Ajuste a altura máxima desejada para o texto truncado 
 }
 
-/* Estilo para o link "Leia mais" quando o mouse passa por cima (opcional) */
+ Estilo para o link "Leia mais" quando o mouse passa por cima (opcional) 
 .expandir-link:hover {
     color: red; /* Você pode personalizar a cor ao passar o mouse */
-    /* Outros estilos ao passar o mouse, se desejado */
+/* Outros estilos ao passar o mouse, se desejado 
 }
 
-/* acabou oocultar */
+/* acabou oocultar 
 
 
 .container{
@@ -89,8 +210,9 @@ body{
     width: 50%;
 }
 
+
 .imagem__responsiva{
-    /* parece que isso nao rolou nao... */
+    /* parece que isso nao rolou nao... 
     max-width: 100%;
     height: auto;
     width: 300px; 
@@ -113,10 +235,10 @@ body{
 }
 .lista__botao{
   color: var(--branco-principal);
-  /* background-color: var(--fundo-secundario); */
+  /* background-color: var(--fundo-secundario); 
   
- border: 2px solid;
- border-radius: 8px;
+  border: 2px solid;
+  border-radius: 8px;
  padding: 5px 0;
  margin: 0% 20%;
  display: block;
@@ -126,3 +248,4 @@ body{
 .lista__botao:hover{
     background-color: var(--fundo-secundario);
 }
+    */

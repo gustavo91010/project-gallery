@@ -7,106 +7,121 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header></header>
     <main>
-        
-    <section class="container principal">
-        <h1 class="principal__title">Bem-vindo à Oficina de Ideias</h1>
-<p class="principal__subtitle">O lugar onde, as ideias ganham vida e as dúvidas se renovam!</p>
 
-        <div class="caixa__trabalho">
+        <section class="principal">
+            <h1 class="principal__title">Bem-vindo à Oficina de Ideias</h1>
+            <p class="principal__subtitle">O lugar onde, as ideias ganham vida e as dúvidas se renovam!</p>
 
-        
-
-           
-            <ul class="lista caixa__trabalho__lista">
-                <li class="lista__item">
-                    <div class="hum">
-                        <p class="paragrafo-curtido">
-                            Este projeto foi criado durante o curso de <br> HTML e CSS: praticando HTML/CSS da alura.
-                            <a href="#" class="expandir-link">Leia mais</a>
-                        </p>
-                        <div class="texto-oculto">
-                            <p>
-                                Recebemos um modelo fornecido pelo FGMA e tivemos o desafio de transformar as informações fornecidas em nosso próprio site.
-                                Foi um trabalho mais complexo em comparação com os projetos anteriores, permitindo-nos praticar ainda mais técnicas avançadas, como o posicionamento flexível (Flexbox) e o sistema de grid, além de explorar novas maneiras de criar botões e posicionar elementos com CSS.
-                            </p>
-                            <!-- <a href="#" class="ocultar-link">Ocultar</a> -->
-                        </div>
-                    </div>
-                    <img src="img/projetos/pj-alura-plus.png" alt="" class="lista__image">
-                </li>
-                <a href="" class="lista__botao">acesse clicando aqui</a>
-               
+            <ul class="lista">
                 <li class="lista__item">
 
-                    <div class="hum">
-                        <p class="paragrafo-curtido">
-                            Foi o meu primeiro projeto no mundo do desenvolvimento frontend, 
-                             <br> o meu primeiro contato com HTML e CSS.
-                            <a href="#" class="expandir-link">Leia mais</a>
+                    <div class="lista__item__texto">
+                       
+
+                        <p class="lista__item__introducao">
+                            Foi o meu primeiro projeto no mundo do desenvolvimento frontend,
+                            <br> o meu primeiro contato com HTML e CSS.
+                            <label for="lista__item__opção_1" class="lista__item__imagem">
+                                <img src="img/expansao.svg" alt="expandir conteudo" class="lista__item__image_expandir">
+                            </label>
                         </p>
-                        <p class="texto-oculto" >Fiquei muito empolgado com essa experiência, e uma das grandes diferenças em relação ao backend é que agora posso mostrar diretamente o que estou criando, em vez de apenas explicar teoricamente. Não preciso mais dizer 'imagine...' - posso simplesmente demonstrar na prática. Foi uma jornada empolgante e estou ansioso para continuar aprendendo e criando no mundo do frontend.</p>
-                        <!-- <div class="texto-oculto">
-                           
-                        </div> -->
+                        <input type="checkbox" id="lista__item__opção_1" class="lista__item__checkbox">
+                        
+                        <p class="lista__item__expansão"> Fiquei muito empolgado com essa experiência, e uma das grandes
+                            diferenças em relação ao backend é que agora posso mostrar diretamente o que estou
+                            criando, em vez de apenas explicar teoricamente. Não preciso mais dizer 'imagine...' -
+                            posso simplesmente demonstrar na prática. Foi uma jornada empolgante e estou ansioso
+                            para continuar aprendendo e criando no mundo do frontend
+                        </p>
+
+                        <a href="" class="lista__item__link">clique aqui par acessar a pagina</a>
                     </div>
                     <img src="img/projetos/pj-portifolio.png" alt="" class="lista__image">
                 </li>
-                <a href="" class="lista__botao">acesse clicando aqui</a>
 
-                
                 <li class="lista__item">
-                    <div class="hum">
-                        <p class="paragrafo-curtido">
-                            O frontend da minha api Bill Manager.
-                            <a href="#" class="expandir-link">Leia mais</a>
+
+                    <div class="lista__item__texto">
+
+                        <p class="lista__item__introducao">
+                            Este projeto foi criado durante o curso de <br> HTML e CSS: praticando HTML/CSS da
+                            alura.
+                            <label for="lista__item__opção_2" class="lista__item__imagem">
+                                <img src="img/expansao.svg" alt="expandir conteudo" class="lista__item__image_expandir">
+                            </label>
                         </p>
-                        <!-- <div class="texto-oculto">
-                            
-                        </div> -->
-                        <p class="texto-oculto">ainda estou implementando as funcções, ate o momento, só fiz a tela de login</p>
+                        
+
+                        <input type="checkbox" id="lista__item__opção_2" class="lista__item__checkbox">
+                        <p class="lista__item__expansão"> Recebemos um modelo fornecido pelo FIGMA e tivemos o desafio
+                            de
+                            transformar as
+                            informações fornecidas em nosso próprio site.
+                            Foi um trabalho mais complexo em comparação com os projetos anteriores,
+                            permitindo-nos praticar ainda mais técnicas avançadas, como o posicionamento
+                            flexível (Flexbox) e o sistema de grid, além de explorar novas maneiras de criar
+                            botões e posicionar elementos com CSS.
+                        </p>
+                        <a href="" class="lista__item__link">clique aqui par acessar a pagina.</a>
+                    </div>
+                    <img src="img/projetos/pj-alura-plus.png" alt="" class="lista__image">
+                </li>
+                <li class="lista__item">
+
+                    <div class="lista__item__texto">
+
+                        <p class="lista__item__introducao">
+                            O frontend da minha api Bill Manager.
+                            <label for="lista__item__opção_3" class="lista__item__imagem">
+                                <img src="img/expansao.svg" alt="expandir conteudo" class="lista__item__image_expandir">
+                            </label>
+                        </p>
+                        
+
+                        <input type="checkbox" id="lista__item__opção_3" class="lista__item__checkbox">
+                        <p class="lista__item__expansão"> ainda estou implementando as funcções, ate o momento, só fiz a tela
+                            de login
+                        </p>
+                        <a href="" class="lista__item__link">clique aqui par acessar a pagina</a>
                     </div>
                     <img src="img/projetos/pj-bill-manager.png" alt="" class="lista__image">
                 </li>
-                <a href="" class="lista__botao">acesse clicando aqui</a> 
-
             </ul>
 
-        </div>
-       
-    </section>
+        </section>
 
-</main>
+    </main>
 
-<footer></footer>
-<script>
-   const expandirLinks = document.querySelectorAll('.expandir-link');
-const ocultarLinks = document.querySelectorAll('.ocultar-link');
+    <footer></footer>
+    <script>
+        const expandirLinks = document.querySelectorAll('.expandir-link');
+        const ocultarLinks = document.querySelectorAll('.ocultar-link');
 
-expandirLinks.forEach(function(link, index) {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const textoOculto = this.parentElement.nextElementSibling;
+        expandirLinks.forEach(function (link, index) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const textoOculto = this.parentElement.nextElementSibling;
 
-        if (textoOculto.style.display === 'block') {
-            textoOculto.style.display = 'none';
-            ocultarLinks[index].style.display = 'none'; // Oculta o link "Ocultar"
-            expandirLinks[index].textContent = 'Leia mais'; // Altera o texto do link "Leia mais"
-        } else {
-            textoOculto.style.display = 'block';
-            ocultarLinks[index].style.display = 'inline'; // Exibe o link "Ocultar"
-            expandirLinks[index].textContent = 'Ocultar'; // Altera o texto do link "Leia mais"
-        }
-    });
-});
+                if (textoOculto.style.display === 'block') {
+                    textoOculto.style.display = 'none';
+                    ocultarLinks[index].style.display = 'none'; // Oculta o link "Ocultar"
+                    expandirLinks[index].textContent = 'Leia mais'; // Altera o texto do link "Leia mais"
+                } else {
+                    textoOculto.style.display = 'block';
+                    ocultarLinks[index].style.display = 'inline'; // Exibe o link "Ocultar"
+                    expandirLinks[index].textContent = 'Ocultar'; // Altera o texto do link "Leia mais"
+                }
+            });
+        });
 
-</script>
+    </script>
 </body>
 
 </html>
