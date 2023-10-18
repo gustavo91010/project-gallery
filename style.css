@@ -29,7 +29,8 @@ https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
     */
 
 
-    background-color: #5C3D2E;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
     width: 70%;
     height: 100vw;
     margin: auto;
@@ -99,17 +100,28 @@ https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
     fill: red;
     /* Altere a cor preenchimento (fill) para a cor desejada */
 }
+.lista__item__botões{
+display: flex;
+flex-direction: column;
+width: 50%;
+
+}
 
 .lista__image {
-    width: 40%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0.5em;
 }
 
 
 .lista__item__link {
     text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 25px;
-    background: #C0C0C0;
+    margin: auto;
+    padding: 0.1em 4em;
+    border-radius: 5px;
+    background: var(--fundo-secundario);
+    color: var(--branco-principal);
+
 
 }
 
