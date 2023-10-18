@@ -109,6 +109,7 @@ width: 50%;
 
 .lista__image {
     width: 80%;
+    height: 15%;
     margin: auto;
     margin-bottom: 0.5em;
 }
