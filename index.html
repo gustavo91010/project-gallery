@@ -5,6 +5,8 @@
     <!-- 
         https://gustavo91010.github.io/project-gallery/
      -->
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Gallery</title>
@@ -12,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> <!-- do carrocel-->
 </head>
 
 <body>
@@ -19,7 +22,7 @@
     <main>
 
         <section class="principal">
-            <h1 class="principal__title">Bem-vindo à Oficina de Ideias</h1>
+            <h1 class="principal__title">Oficina de Ideias</h1>
             <p class="principal__subtitle">O lugar onde, as ideias ganham vida e as dúvidas se renovam!</p>
 
             <ul class="lista">
@@ -78,6 +81,7 @@
                             botões e posicionar elementos com CSS.
                         </p>
                     </div>
+
                     <div class="lista__item__botões">
                         <img src="img/projetos/pj-alura-plus.png" alt="" class="lista__image">
                         <a href="https://gustavo91010.github.io/alura-plus/" class="lista__item__link">Saiba mais.</a>
@@ -112,7 +116,7 @@
                     <div class="lista__item__texto">
 
                         <p class="lista__item__introducao">
-                           Um game desafiador
+                            Um game desafiador
                             <label for="lista__item__opção_4" class="lista__item__imagem">
                                 <img src="img/expansao.svg" alt="expandir conteudo" class="lista__item__image_expandir">
                             </label>
@@ -120,7 +124,11 @@
 
 
                         <input type="checkbox" id="lista__item__opção_4" class="lista__item__checkbox">
-                        <p class="lista__item__expansão"> Por mais que tenha sido feito com a ajuda de um vídeo no YouTube, pude aprender bastante com o exercício, tanto no simples fato de tentar compreender o que ele estava fazendo, quanto em descobrir coisas novas, novos métodos, novas funções e desfrutar um pouco da mágica do CSS. Além disso, foi uma ótima experiência poder jogar o jogo que acabei de criar, um clássico nos "tijolões"... xD </p>
+                        <p class="lista__item__expansão"> Por mais que tenha sido feito com a ajuda de um vídeo no
+                            YouTube, pude aprender bastante com o exercício, tanto no simples fato de tentar compreender
+                            o que ele estava fazendo, quanto em descobrir coisas novas, novos métodos, novas funções e
+                            desfrutar um pouco da mágica do CSS. Além disso, foi uma ótima experiência poder jogar o
+                            jogo que acabei de criar, um clássico nos "tijolões"... xD </p>
                     </div>
 
                     <div class="lista__item__botões">
@@ -131,32 +139,170 @@
             </ul>
 
         </section>
+        <section class="carrocel">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide">
+                        <div class="carrocel__itens">
+                            <div class="lista__item__botões">
+                                <img src="img/projetos/pj-snake-game.png" alt="" class="lista__image">
+
+                                <a href="https://gustavo91010.github.io/snake-game/" class="lista__item__link">Saiba
+                                    mais.</a>
+                            </div>
+                            <div class="lista__item__texto">
+
+                                <p class="lista__item__introducao">
+                                    Um game desafiador
+                                    <label for="lista__item__opção_4" class="lista__item__imagem">
+                                        <img src="img/expansao.svg" alt="expandir conteudo"
+                                            class="lista__item__image_expandir">
+                                    </label>
+                                </p>
+
+
+                                <input type="checkbox" id="lista__item__opção_4" class="lista__item__checkbox">
+                                <p class="lista__item__expansão"> Por mais que tenha sido feito com a ajuda de um vídeo
+                                    no
+                                    YouTube, pude aprender bastante com o exercício, tanto no simples fato de tentar
+                                    compreender
+                                    o que ele estava fazendo, quanto em descobrir coisas novas, novos métodos, novas
+                                    funções
+                                    e
+                                    desfrutar um pouco da mágica do CSS. Além disso, foi uma ótima experiência poder
+                                    jogar o
+                                    jogo que acabei de criar, um clássico nos "tijolões"... xD </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="carrocel__itens">
+                            <div class="lista__item__botões">
+
+                                <img src="img/projetos/pj-bill-manager.png" alt="" class="lista__image">
+
+                                <a href="" class="lista__item__link">Saiba mais.</a>
+                            </div>
+                            <div class="lista__item__texto">
+
+                                <p class="lista__item__introducao">
+                                    O frontend da minha api Bill Manager.
+                                    <label for="lista__item__opção_3" class="lista__item__imagem">
+                                        <img src="img/expansao.svg" alt="expandir conteudo"
+                                            class="lista__item__image_expandir">
+                                    </label>
+                                </p>
+
+
+                                <input type="checkbox" id="lista__item__opção_3" class="lista__item__checkbox">
+                                <p class="lista__item__expansão"> ainda estou implementando as funcções, ate o momento,
+                                    só fiz a tela de login
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="carrocel__itens">
+
+                            <div class="lista__item__botões">
+                                <img src="img/projetos/pj-alura-plus.png" alt="" class="lista__image">
+                                <a href="https://gustavo91010.github.io/alura-plus/" class="lista__item__link">Saiba
+                                    mais.</a>
+                            </div>
+                            <div class="lista__item__texto">
+
+                                <p class="lista__item__introducao">
+                                    Este projeto foi criado durante o curso de <br> HTML e CSS: praticando HTML/CSS da
+                                    alura.
+                                    <label for="lista__item__opção_2" class="lista__item__imagem">
+                                        <img src="img/expansao.svg" alt="expandir conteudo"
+                                            class="lista__item__image_expandir">
+                                    </label>
+                                </p>
+
+
+                                <input type="checkbox" id="lista__item__opção_2" class="lista__item__checkbox">
+                                <p class="lista__item__expansão"> Recebemos um modelo fornecido pelo FIGMA e tivemos o
+                                    desafio
+                                    de
+                                    transformar as
+                                    informações fornecidas em nosso próprio site.
+                                    Foi um trabalho mais complexo em comparação com os projetos anteriores,
+                                    permitindo-nos praticar ainda mais técnicas avançadas, como o posicionamento
+                                    flexível (Flexbox) e o sistema de grid, além de explorar novas maneiras de criar
+                                    botões e posicionar elementos com CSS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="carrocel__itens">
+                            <div class="lista__item__botões">
+
+                                <img src="img/projetos/pj-portifolio.png" alt="" class="lista__image">
+
+                                <a href="" class="lista__item__link">Saiba mais.</a>
+                            </div>
+                            <div class="lista__item__texto">
+
+                                <p class="lista__item__introducao">
+                                    Foi o meu primeiro projeto no mundo do desenvolvimento frontend,
+                                    <br> o meu primeiro contato com HTML e CSS.
+                                    <label for="lista__item__opção_1" class="lista__item__imagem">
+                                        <img src="img/expansao.svg" alt="expandir conteudo"
+                                            class="lista__item__image_expandir">
+                                    </label>
+                                </p>
+                                <input type="checkbox" id="lista__item__opção_1" class="lista__item__checkbox">
+
+                                <p class="lista__item__expansão"> Fiquei muito empolgado com essa experiência, e uma das
+                                    grandes
+                                    diferenças em relação ao backend é que agora posso mostrar diretamente o que estou
+                                    criando, em vez de apenas explicar teoricamente. Não preciso mais dizer 'imagine...'
+                                    -
+                                    posso simplesmente demonstrar na prática. Foi uma jornada empolgante e estou ansioso
+                                    para continuar aprendendo e criando no mundo do frontend
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">Mario Jump</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
 
     </main>
 
     <footer></footer>
-    <!-- <script>
-        const expandirLinks = document.querySelectorAll('.expandir-link');
-        const ocultarLinks = document.querySelectorAll('.ocultar-link');
 
-        expandirLinks.forEach(function (link, index) {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const textoOculto = this.parentElement.nextElementSibling;
 
-                if (textoOculto.style.display === 'block') {
-                    textoOculto.style.display = 'none';
-                    ocultarLinks[index].style.display = 'none'; // Oculta o link "Ocultar"
-                    expandirLinks[index].textContent = 'Leia mais'; // Altera o texto do link "Leia mais"
-                } else {
-                    textoOculto.style.display = 'block';
-                    ocultarLinks[index].style.display = 'inline'; // Exibe o link "Ocultar"
-                    expandirLinks[index].textContent = 'Ocultar'; // Altera o texto do link "Leia mais"
-                }
-            });
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 100,
         });
-
-    </script> -->
+    </script>
 </body>
 
 </html>
