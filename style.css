@@ -1,3 +1,5 @@
+@import url("style/carrocel.css");
+
 /*
 https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
 
@@ -32,8 +34,9 @@ https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
     width: 70%;
-    height: 100vw;
+    height: auto;
     margin: auto;
+    padding-bottom: 2em;
 }
 
 .lista__item {
@@ -95,9 +98,11 @@ https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097*/
 
     width: 15px;
 }
+.lista__item__image_expandir:hover{
+    background: var(--fundo-secundario);
+}
 
 .sgv__icone__expandir {
-    fill: red;
     /* Altere a cor preenchimento (fill) para a cor desejada */
 }
 .lista__item__botões{
@@ -108,9 +113,11 @@ width: 50%;
 }
 
 .lista__image {
+    /*
     width: 80%;
     height: 15%;
     margin: auto;
+    */
     margin-bottom: 0.5em;
 }
 
@@ -126,6 +133,21 @@ width: 50%;
 
 }
 
+
+.carrocel{
+    display: none;
+}
+@media screen and (max-width: 718px) {
+    .carrocel{
+        display: block;
+    }
+    .lista{
+        display: none;
+    }
+    .principal__title{
+    }
+    
+}
 
 
 
